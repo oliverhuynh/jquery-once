@@ -96,7 +96,7 @@
     // Find elements that don't have the jQuery Once data applied to them yet.
     return this.filter(function () {
       return $(this).data(name) !== true;
-    }).data(name, true);
+    }).data(name, true).addClass(name + '-processed');
   };
 
   /**
